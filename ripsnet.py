@@ -9,7 +9,7 @@ class RipsNet(nn.Module):
         self.use_bias = use_bias
         self.out_shape = out_shape
         self.rips_net = nn.Sequential(
-            DeepSetLayer(2, 30),
+            DeepSetLayer(600, 30),
             nn.ReLU(),
             DeepSetLayer(30, 20),
             nn.ReLU(),
